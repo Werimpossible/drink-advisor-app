@@ -2,15 +2,17 @@
 <html lang="en">
 
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     <!-- Links de jQuery y bootstrap -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Links de Bootstrap -->
     <link rel="stylesheet" href="css\bootstrap.min.css">
     <!-- Link de hoja de estilos local -->
     <link rel="stylesheet" href="css/main.css">
+    <!-- Link del font y otros -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.5/css/mdb.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.5/js/mdb.min.js">
     <title>Drink Advisor</title>
 </head>
 
@@ -18,11 +20,9 @@
     <!-- Contenedor general de maqueta -->
     <main class="container">
         <!-- Área de header con logo de app -->
-        <header class="row">
-            <section class="col-md-12 col-xs-12">
-                <h1>Drink Advisor</h1>
-            </section>
-        </header>
+        <div class="page-header">
+            <h1>Drink Advisor</h1>
+        </div>
 
         <!-- Contenedor de mapa de Google de la zona seleccionada-->
         <section class="row">
@@ -32,7 +32,7 @@
             </section>
         </section>
 
-        <!-- Section del titulo de la caja de imput -->
+        <!-- Sección del título de la caja de imput -->
         <section class="row">
             <section class="col-md-12 col-xs-12">
                 <h2>Bares que tienes cerca:</h2>
@@ -57,14 +57,50 @@
 
 
         <!-- Tarjeta machote de como aparecerán los datos de los bares con clases de modal -->
-        <section class="row">
-            <section class="col-md-3 col-xs-3 restaurant-container" data-toggle="modal" data-target="#modal-restaurant">
-                <div>
-                    <h3>Titulo bar</h3>
-                    <img class="img-responsive" src="assets/images/rosseta-restaurant.jpg" alt="rosseta-restaurant">
-                </div>
-            </section>
-        </section>
+<!--Card-->
+<div class="card">
+
+        <!--Card image-->
+        <div class="view overlay hm-white-slight">
+            <img src="https://mdbootstrap.com/img/Photos/Others/food.jpg" class="img-fluid" alt="">
+            <a>
+                <div class="mask"></div>
+            </a>
+        </div>
+        <!--/.Card image-->
+    
+        <!--Button-->
+        <a class="btn-floating btn-action"><i class="fa fa-chevron-right"></i></a>
+    
+        <!--Card content-->
+        <div class="card-body">
+            <!--Title-->
+            <h4 class="card-title">Card title</h4>
+            <hr>
+            <!--Text-->
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <!--/.Card content-->
+    
+        <!-- Card footer -->
+        <div class="card-data">
+            <ul>
+                <li><i class="fa fa-clock-o"></i> 05/10/2015</li>
+                <li><a href="#"><i class="fa fa-comments-o"></i>12</a></li>
+                <li><a href="#"><i class="fa fa-facebook"> </i>21</a></li>
+                <li><a href="#"><i class="fa fa-twitter"> </i>5</a></li>
+            </ul>
+        </div>
+        <!-- Card footer -->
+    
+    </div>
+    <!--/.Card-->
+    
+    </div>
+    <!--/.Card-->
+
+
+
     </main>
 
 
