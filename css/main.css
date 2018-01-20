@@ -1,1 +1,49 @@
+body {
+    background-color: #2B2B2B;
+    /* Estilos para textos de toda la app */
+    color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
 
+main {
+    /* display: none; */
+}
+
+body>section>section>section>h1,
+body>main>section:nth-child(1)>section> h1 {
+    font-size: 7em;
+    font-weight: 300;
+    margin-bottom: 15%;
+}
+
+body>main>section:nth-child(3)>section>h2 { 
+    font-size: 3.5em;
+}
+
+body>main>section:nth-child(4) {
+    margin: 5% auto;
+}
+
+body>main>div {
+    height: 50px;
+    margin: 5% auto;
+}
+
+body>main>div>mdiv>div {
+    /* height: 50px; */
+    margin: auto;
+    /* width: 90%;   */
+}
+
+/* .container {
+    border: 1px solid white;
+    padding: 2%;
+} */
+
+.splash {
+    width: 100%;
+    margin: 50vh auto;
+}
