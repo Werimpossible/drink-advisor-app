@@ -2,102 +2,105 @@
 <html lang="en">
 
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Links de jQuery y bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Links de Bootstrap -->
+    <link rel="stylesheet" href="css\bootstrap.min.css">
+    <!-- Link de hoja de estilos local -->
     <link rel="stylesheet" href="css/main.css">
+    <!-- Link del font y otros -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.2/css/mdb.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.5/js/mdb.min.js">
     <title>Drink Advisor</title>
 </head>
 
 <body>
-    <!-- Utilizacion de contenedor general de maqueta -->
+    <!-- Contenedor general de maqueta -->
     <main class="container">
-        <!-- Área  -->
-        <header class="row">
-            <section class="col-md-12 col-xs-12">
-                <h1>Drink Advisor</h1>
-            </section>
-        </header>
+        <!-- Área de header con logo de app -->
+        <div class="header">
+        <img src="assets/images/drink-advisor.png" width="233" height="40" alt=""/>
+        </div>
+        <hr>
 
+        <!-- Contenedor de mapa de Google de la zona seleccionada-->
         <section class="row">
             <section class="col-md-12 col-xs-12">
-                <iframe width="100%" height="400vh" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCeNpNKdbBiNLHroVoa5YfZ6p9WcO12uO4&q=Space+Tonalá+30,+Roma+Nte.,+06700+Ciudad+de+México,+CDMX"
-                    allowfullscreen>
-                </iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7526.868817088743!2d-99.18035927702357!3d19.393627767730806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff70fdea5055%3A0xf47485a18fe215a8!2zTsOhcG9sZXMsIENpdWRhZCBkZSBNw6l4aWNvLCBDRE1Y!5e0!3m2!1ses!2smx!4v1516480971092"
+                    width="100%" height="400vh" frameborder="0" style="border:0"></iframe>
             </section>
         </section>
 
+        <!-- Sección del título de la caja de input -->
         <section class="row">
             <section class="col-md-12 col-xs-12">
-                <h2>Comida cerca de ti</h2>
+                <h2>Bares que tienes cerca:</h2>
             </section>
         </section>
 
+        <!-- Sección del input donde el usuario ingresará su busqueda, bajado de componentes de Bootstrap-->
         <div class="row">
-            <div class="col-md-8 col-xs-8 col-md-offset-2 col-xs-offset-2">
+            <div class="col-lg-6">
                 <div class="input-group">
-                    <input id="searh-input" type="text" class="form-control" placeholder="Search for...">
+                    <input type="text" class="form-control" placeholder="Search for...">
                     <span class="input-group-btn">
-                        <button class="btn btn-default" type="button">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </button>
+                        <button class="btn btn-default" type="button">Buscar</button>
                     </span>
                 </div>
-                <!-- /input-group -->
             </div>
-            <!-- /.col-lg-6 -->
         </div>
-        <!-- /.row -->
 
+
+
+
+        <!-- Tarjeta machote de como aparecerán los datos de los bares con clases de modal -->
         <section class="row">
-            <section class="col-md-3 col-xs-3 restaurant-container" data-toggle="modal" data-target="#modal-restaurant">
-                <div>
-                    <h3>Rosseta</h3>
-                    <img class="img-responsive" src="assets/images/rosseta-restaurant.jpg" alt="rosseta-restaurant">
-                </div>
-            </section>
+        <div class="card card-cascade narrower">
+
+        <!--Card image-->
+        <div class="view overlay hm-white-slight">
+            <img src="http://fillmurray.com/300/200" class="img-fluid" alt="">
+            <a>
+                <div class="mask"></div>
+            </a>
+        </div>
+        <!--/.Card image-->
+    
+        <!--Card content-->
+        <div class="card-body ">
+            <h5 class="pink-text"><i class="fa fa-cutlery"></i> Titulo de restaurante</h5>
+            <!--Title-->
+            <h4 class="card-title">direccion</h4>
+            <!--Text-->
+            <p class="card-text"></p>
+            <a class="btn btn-unique">Mas información</a>
+        </div>
         </section>
+    
+    </div>
+    <!--/.Card Narrower-->
+
+
+
     </main>
 
-    <div class="modal fade" tabindex="-1" role="dialog" id="modal-restaurant">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <h2 class="modal-title">Rosseta</h2>
-                </div>
-                <div class="modal-body">
-                    <img class="img-responsive" src="assets/images/sartoria-restaurant.jpg" alt="">
-                    <p class="h3">Colima #166, Col. Roma,06700 Ciudad de México</p>
-                    <p class="h4">4 estrellas</p>
-                    <p class="h4">Cocinas:
-                        <span></span>Mediterránea</p>
-                    <p class="h4">Rango de precios:
-                        <span>más de MXN500</span>
-                    </p>
-                </div>
-            </div>
-            <!-- /.modal-content -->
-        </div>
-        <!-- /.modal-dialog -->
-    </div>
-    <!-- /.modal -->
 
-    <section class="container-fluid splash">
+
+    <!-- <section class="container-fluid splash">
         <section class="row">
             <section class="col-md-12 col-xs-12">
                 <h1>Foodmap</h1>
             </section>
         </section>
-    </section>
+    </section> -->
 
-    <script type="text/javascript" src="js/data.js"></script>
+
+    <!-- Links de documentos de data y funciones -->
+    <script type="text/javascript" src="js/datamap.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
-</body>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.2/js/mdb.min.js"></script>   
 </body>
 
 </html>
