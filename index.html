@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- Link del font y otros -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.5/css/mdb.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.2/css/mdb.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.5/js/mdb.min.js">
     <title>Drink Advisor</title>
 </head>
@@ -20,9 +20,10 @@
     <!-- Contenedor general de maqueta -->
     <main class="container">
         <!-- Área de header con logo de app -->
-        <div class="page-header">
-            <h1>Drink Advisor</h1>
+        <div class="header">
+        <img src="assets/images/drink-advisor.png" width="233" height="40" alt=""/>
         </div>
+        <hr>
 
         <!-- Contenedor de mapa de Google de la zona seleccionada-->
         <section class="row">
@@ -32,7 +33,7 @@
             </section>
         </section>
 
-        <!-- Sección del título de la caja de imput -->
+        <!-- Sección del título de la caja de input -->
         <section class="row">
             <section class="col-md-12 col-xs-12">
                 <h2>Bares que tienes cerca:</h2>
@@ -48,56 +49,38 @@
                         <button class="btn btn-default" type="button">Buscar</button>
                     </span>
                 </div>
-                <!-- /input-group -->
             </div>
-            <!-- /.col-lg-6 -->
         </div>
-        <!-- /.row -->
+
 
 
 
         <!-- Tarjeta machote de como aparecerán los datos de los bares con clases de modal -->
-<!--Card-->
-<div class="card">
+        <section class="row">
+        <div class="card card-cascade narrower">
 
         <!--Card image-->
         <div class="view overlay hm-white-slight">
-            <img src="https://mdbootstrap.com/img/Photos/Others/food.jpg" class="img-fluid" alt="">
+            <img src="http://fillmurray.com/300/200" class="img-fluid" alt="">
             <a>
                 <div class="mask"></div>
             </a>
         </div>
         <!--/.Card image-->
     
-        <!--Button-->
-        <a class="btn-floating btn-action"><i class="fa fa-chevron-right"></i></a>
-    
         <!--Card content-->
-        <div class="card-body">
+        <div class="card-body ">
+            <h5 class="pink-text"><i class="fa fa-cutlery"></i> Titulo de restaurante</h5>
             <!--Title-->
-            <h4 class="card-title">Card title</h4>
-            <hr>
+            <h4 class="card-title">direccion</h4>
             <!--Text-->
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text"></p>
+            <a class="btn btn-unique">Mas información</a>
         </div>
-        <!--/.Card content-->
-    
-        <!-- Card footer -->
-        <div class="card-data">
-            <ul>
-                <li><i class="fa fa-clock-o"></i> 05/10/2015</li>
-                <li><a href="#"><i class="fa fa-comments-o"></i>12</a></li>
-                <li><a href="#"><i class="fa fa-facebook"> </i>21</a></li>
-                <li><a href="#"><i class="fa fa-twitter"> </i>5</a></li>
-            </ul>
-        </div>
-        <!-- Card footer -->
+        </section>
     
     </div>
-    <!--/.Card-->
-    
-    </div>
-    <!--/.Card-->
+    <!--/.Card Narrower-->
 
 
 
@@ -117,6 +100,7 @@
     <!-- Links de documentos de data y funciones -->
     <script type="text/javascript" src="js/datamap.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.2/js/mdb.min.js"></script>   
 </body>
 
 </html>
