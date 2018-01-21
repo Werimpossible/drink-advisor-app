@@ -39,47 +39,29 @@
         <!-- Sección del título de la caja de input -->
         <section class="row">
             <section class="col-md-12 col-xs-12">
-                <h2>Bares que tienes cerca:</h2>
+                <h2>Bares cerca de ti:</h2>
             </section>
         </section>
 
         <!-- Sección del input donde el usuario ingresará su busqueda, bajado de componentes de Bootstrap-->
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-md-8 col-xs-8 col-md-offset-2 col-xs-offset-2">
                 <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Busca aqui...">
+                    <input id="searh-input" type="text" class="form-control" placeholder="Busca... happy-hour">
                     <span class="input-group-btn">
-                        <button class="btn btn-default" type="button">Buscar</button>
+                        <button class="btn btn-default" type="button">
+                            Buscar
+                        </button>
                     </span>
                 </div>
             </div>
-        </div>
+            </div>
+
+            
+            <!-- Modal contenedor de información de bares -->
+            <section id="show-bars" class="row">
 
 
-        <!-- Tarjeta machote de como aparecerán los datos de los bares con clases de modal -->
-        <section id="show-bars" class="row">
-        <div class="card card-cascade narrower">
-
-        <!--Card image-->
-        <div class="view overlay hm-white-slight">
-            <img src="http://fillmurray.com/382/200" class="img-fluid" alt="">
-            <a>
-                <div class="mask"></div>
-            </a>
-        </div>
-        <!--Card content-->
-        <div class="card-body ">
-            <h5 idclass="pink-text"><i class="fa fa-cutlery"></i> Titulo de restaurante</h5>
-            <!--Title-->
-            <h4 class="card-title">Direccion</h4>
-            <!--Text-->
-            <p class="card-text"></p>
-            <a class="btn btn-unique">Mas informacion</a>
-        </div>
-        </section>
-    
-    </div>
-    <!--/.Card Narrower-->
 
 
 
