@@ -1,8 +1,11 @@
+/* Colores basicos de app
+    Negro :#2B2B2B 
+    Azul: #00F6FF
+    Blanco: #whitesmoke */
 body {
     background-color: #2B2B2B;
     /* Estilos para textos de toda la app */
     color: whitesmoke;
-    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -19,7 +22,7 @@ main.container>div.page-header{
 }
 
 
-body>main>section:nth-child(3)>section>h2 { 
+body>main>section>h2 { 
     font-size: 3.5em;
 }
 
