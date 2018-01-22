@@ -1,9 +1,10 @@
+//Metodo cargar jQuery
+$(document).ready(loadPage);
+
+
 //Mandar elementos HTML al Js
 var $inputSearcher = $("#bar-seacher");
 
-
-//Metodo cargar jQuery
-$(document).ready(loadPage);
 
 //Aqui meteras modales y searcher del filtro
 function loadPage() {

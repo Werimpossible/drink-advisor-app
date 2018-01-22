@@ -3660,11 +3660,11 @@ textarea.input-lg {
 
 .btn {
     display: inline-block;
-    padding: 6px 12px;
+    padding: 5px 5px;
     margin-bottom: 0;
     font-size: 14px;
     font-weight: 400;
-    line-height: 1.42857143;
+    line-height: 1.429;
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
@@ -4732,7 +4732,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
 .input-group-btn:first-child>.dropdown-toggle,
 .input-group-btn:last-child>.btn-group:not(:last-child)>.btn,
 .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle) {
-    border-top-right-radius: 0;
+    border-top-right-radius: 10px;
     border-bottom-right-radius: 0
 }
 
@@ -4762,7 +4762,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
 }
 
 .input-group-btn>.btn {
-    position: relative
+    position: relative;
 }
 
 .input-group-btn>.btn+.btn {
@@ -4772,7 +4772,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
 .input-group-btn>.btn:active,
 .input-group-btn>.btn:focus,
 .input-group-btn>.btn:hover {
-    z-index: 2
+    z-index: 2;
 }
 
 .input-group-btn:first-child>.btn,
@@ -4782,8 +4782,8 @@ textarea.input-group-sm>.input-group-btn>.btn {
 
 .input-group-btn:last-child>.btn,
 .input-group-btn:last-child>.btn-group {
-    z-index: 2;
-    margin-left: -1px
+    /*! z-index: 2; */
+    margin-left: 2px;
 }
 
 .nav {
