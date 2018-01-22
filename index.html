@@ -24,7 +24,7 @@
     <main class="container">
         <!-- Área de header con logo de app -->
         <div class="header">
-        <img src="assets/images/drink-advisor.png" width="233" height="40" alt=""/>
+            <img src="assets/images/drink-advisor.png" width="233" height="40" alt="" />
         </div>
         <hr>
 
@@ -39,52 +39,56 @@
         <!-- Sección del título de la caja de input -->
         <section class="row">
             <section class="col-md-12 col-xs-12">
-                <h2>Bares que tienes cerca:</h2>
+                <h2>Bares cerca de ti:</h2>
             </section>
         </section>
 
         <!-- Sección del input donde el usuario ingresará su busqueda, bajado de componentes de Bootstrap-->
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-md-6 col-xs-6 col-md-offset-2 col-xs-offset-2">
                 <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Busca aqui...">
+                    <input id="searh-input" type="text" class="form-control" placeholder="Busca... happy-hour">
                     <span class="input-group-btn">
-                        <button class="btn btn-default" type="button">Buscar</button>
+                        <button class="btn btngit-default" type="button">
+                            Buscar
+                        </button>
                     </span>
                 </div>
             </div>
         </div>
-
-
-        <!-- Tarjeta machote de como aparecerán los datos de los bares con clases de modal -->
-        <section id="show-bars" class="row">
-        <div class="card card-cascade narrower">
-
-        <!--Card image-->
-        <div class="view overlay hm-white-slight">
-            <img src="http://fillmurray.com/382/200" class="img-fluid" alt="">
-            <a>
-                <div class="mask"></div>
-            </a>
-        </div>
-        <!--Card content-->
-        <div class="card-body ">
-            <h5 idclass="pink-text"><i class="fa fa-cutlery"></i> Titulo de restaurante</h5>
-            <!--Title-->
-            <h4 class="card-title">Direccion</h4>
-            <!--Text-->
-            <p class="card-text"></p>
-            <a class="btn btn-unique">Mas informacion</a>
-        </div>
-        </section>
+        
+    <section class="row" id="bars-container"></section>
     
-    </div>
-    <!--/.Card Narrower-->
-
-
-
     </main>
 
+        <!-- Sección del modal donde se mostrará la información del bar -->
+        <div class="modal fade" tabindex="-1" role="dialog" id="modal-restaurant">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <!-- Titulo de bar -->
+                        <h2 class="modal-title nombre">Heineken</h2>
+                    </div>
+                    <!-- Bloque de información del bar -->
+                    <div class="modal-body">
+                        <img class="img-responsive imagen" src="" alt="">
+                        <address class="h3 address">Montecito 38, Nápoles, Benito Juárez</address>
+                        <p class="h4 rating">4 estrellas</p>
+                        <p class="h4">
+                            <strong>Tipo: </strong>
+                            <span class="tag">Happy Hour</span>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default btn-lg">¡Ven a visitarnos!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- <section class="container-fluid splash">
@@ -99,7 +103,7 @@
     <!-- Links de documentos de data y funciones -->
     <script type="text/javascript" src="js/datamap.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.2/js/mdb.min.js"></script>   
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.2/js/mdb.min.js"></script>
 </body>
 
 </html>
