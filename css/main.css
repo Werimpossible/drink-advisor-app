@@ -13,16 +13,11 @@ main {
 }
 
 main.container>div.page-header{
-    font-size: 7em;
-    font-weight: 300;
-    margin-bottom: 15%;
+    font-size: 6.5em;
+    font-weight: 250;
+    margin-bottom: 12%;
 }
 
-
-body>section>section>section>h1,
-body>main>section:nth-child(1)>section> h1 {
-
-}
 
 body>main>section:nth-child(3)>section>h2 { 
     font-size: 3.5em;
