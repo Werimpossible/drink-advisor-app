@@ -1,23 +1,22 @@
 # DRINK ADVISOR # 
 ### Versión 1.0
+## Link Github Pages: ##
+(https://werimpossible.github.io/drink-advisor-app/index.html)
+
 ## Tabla de Contenido
-1. [Link de Github Pages](#link)
-2. [Descripción](#descripcion)
-3. [Objetivo del reto Laboratoria](#objetivo)
-4. [Sketching de Vistas](#link)
+1. [Descripción](#descripcion)
+2. [Objetivo del reto Laboratoria](#objetivo)
+3. [Sketching de Vistas](#link)
     1. [Splash](#sketch-splash)
     2. [General](#sketch-general)
     3. [Modal](#sketch-splash)
-2. [Vistas Previas](#Vistas-Previas-Definitivas)
+4. [Vistas Previas](#Vistas-Previas-Definitivas)
     1. [Splash](#splash)
     2. [General](#general)
     3. [Modal](#splash)
-3. [Funciones](#funciones)
+5. [Funciones](#funciones)
+    1. [Pseudocodigo](#pseudo)
 
-
-## <a name="link"></a> Link Github Pages: ##
-
-(https://werimpossible.github.io/drink-advisor-app/index.html)
 
 ## <a name="descripcion"></a> Descripción: ##
 - Versión 1.0:
@@ -34,17 +33,15 @@
 
 ## <a name="sketching"></a> Sketching ##
 - **Sketch de splash**
-    - <img src=assets/images/readme/d>
-- **Sketch general**
-    - <img src=assets/images/readme/d>
-- **Sketch modal**
-    - <img src=assets/images/readme/d>
+    - <img src=assets/images/readme/sketch-splash.png>
+- **Sketch general y modal**
+    - <img src=assets/images/readme/sketch-general.png>
 
 ## <a name="vistas"></a> Vistas Previas Definitivas
 - **Vista splash**
-    - <img src=assets/images/readme/d>
+    - <img src=assets/images/readme/vista-splash.png>
 - **Vista general**
-    - <img src=assets/images/readme/d>
+    - <img src=assets/images/readme/vista-general.png>
 - **Vista modal**
     - <img src=assets/images/readme/d>
 
@@ -56,5 +53,5 @@
         - jQueary
         - Bootstrap
         - CSS
-- Pseudocódigo:
-    <img src=assets/images/readme/d>
+### <a name="pseudo"></a> Pseudocódigo:
+<img src=assets/images/readme/pseudocodigo.png>
